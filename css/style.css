@@ -136,6 +136,8 @@ background-color: rgb(87, 83, 83);
 
 }
 .card{
+    /* flex-wrap: wrap; */
+    /* flex-grow: 1; */
     /* border: 1px solid green; */
     height:300px;
     width: 320px;
@@ -209,7 +211,6 @@ background-color: rgb(87, 83, 83);
 .container3-left p{
     font-size: 20px;
 }
-
 .container3-right{
     /* border: 3px solid blue; */
     display: flex;
@@ -241,7 +242,6 @@ background-color: rgb(87, 83, 83);
     font-size: 50px;
 
 }
-
 /* $$$$$$$$$$$$$$$$$$ CONTAINER4 $$$$$$$$$$$$$$$$ */
 .container4{
     background-color:black;
@@ -400,12 +400,318 @@ background-color: rgb(87, 83, 83);
     font-size: 19px;
 }
 
+/* #################### MEDIA QUERY $$$$$$$$$$$$$$$$$$ */
+/* tablet */
+@media(min-width:481px) and (max-width:768px){
+    html{
+        overflow-x: hidden;
+    }
+     body{
+        overflow-x: hidden;
+     } 
+    
+    
+    .logo{
+        padding: 0 30px;
+    }
+    
+    .logo img{
+        height: 28px;
+    }
+    .checkbtn{
+        display: block;
+        /* margin-right:-70px; */
+    }
+    
+    nav ul {
+        /* width: 100%; */
+        width:100%;
+        height:100vh;
+        background-color: rgb(49, 47, 47);
+        display: inline-block; 
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        transition: .5s;
+    }
+    
+    nav ul li {
+        display:block;
+        text-align: center;
+        margin-top:-10px;
+    }
+    
+    #check:checked ~ ul{
+        left: 0;
+    }
 
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* height: auto; */
+    } 
+    
+    
+    
+    .container-left img{
+    height:450px;
+    /* margin-left: -150px; */
+    }
+    
+    
+    .container-right{
+        /* border: 1px dotted red; */
+        margin: 45px 0px 0px 80px;
+        width:85%;
+    } 
+    
+    .container-right h6{
+        color: red;
+        font-size:18px; 
+    
+    } 
+    
+    .container-right h1{
+        font-size:33px;
+    } 
+    
+    .paragraph{
+        font-size:12px;
+    } 
+    
+    .container-btn{
+        margin: 15px 0px ;
+        width:110px;
+        height:40px;
+        font-size: 14px;
+    }
+
+    /* container2 */
+    
+.container2{
+    border: 1px solid red;
+}
+.cards{
+    /* border: 2px solid green; */
+    display: flex;
+    flex-direction: column;
+    /* flex-grow: 1; */
+    /* justify-content: center; */
+    align-items: center;
+    /* padding: auto; */
+    /* width: auto; */
+    /* padding: 10px; */
+}
+.card{
+    /* height:250px; */
+    /* height: auto; */
+    width:500px; 
+    height: auto;
+    background-color: rgb(19, 18, 18);
+    /* color: white; */
+    padding:20px 30px;
+    margin:10px ;
+}
+
+.card img{
+    height:80px;
+}
+   
+/*  container3 */
+.container3{
+    /* border: 1px solid green; */
+}
+.clients{
+    margin-right:90px;
+}
+
+.container3-left{
+    margin-top:110px;
+ 
+}
+
+.container3-left h1{
+    font-size:55px;
+}
+
+.container3-left p{
+    font-size:17px;
+}
+
+
+.container3-right .client{
+/* border: 1px solid red; */
+width:280px;
+margin:10px 15px;
+display:flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+/* height: auto; */
+
+/* height: auto; */
+}
+
+
+.container3-right .client h1{
+    font-size:32px;
+}
+
+/* container4 */
+.container4{
+    background-color:black;
+    color: white;
+}
+.abcd{
+    display: flex;
+    justify-content: space-between;
+    width:85vw;
+    margin: auto;
+  
+}
+
+.container4-left{
+    margin-top:25px;
+}
+
+.container4-left h1{
+font-size: 20px;
+}
+
+.container4-left p {
+font-size:14px;
+}
+
+.container4-btn{
+    width: 100px;
+    height: 33px;
+    margin-top: 27px;
+    font-size: 12px;
+    border: 2px solid transparent;
+}
+
+/* container5 */
+.container5{
+    /* border: 1px solid red; */
+    width: 470px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    /* box-sizing: border-box; */
+
+   }
+   .photo{
+
+       /* height:280px;
+       width:440px; */
+
+       /* height: auto;
+       width: auto; */
+     
+   }
+   .photo img{
+       /* height:auto; */
+       height:320px;
+       width:460px;
+       /* width: auto; */
+   }
+   
+   .box1{
+    /* border: 2px solid blue; */
+       margin-top:22px;
+       /* box-sizing: border-box; */
+   }
+   .box1 h2{
+       margin-top:5px;
+       font-size:19px;
+   }
+   
+   .box1 p{
+    margin-top:3px;
+       font-size: 13px;
+   }
+    
+   /* container6 */
+   .container6{
+    width:90vw;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    /* border: 3px solid red; */
+    font-family: 'Roboto', sans-serif;
+    margin-top:35px;
+    padding: 15px 10px;
+    /* background-color: rgb(49, 48, 48); */
+}
+
+.container6-left h1{
+    font-size:25px;
+    line-height:28px;
+}
+
+.container6-left p{
+    font-size:13px;
+    margin-top:8px;
+}
+
+
+
+ .container6-right .container6-btn{
+    width:100px;
+    height:65px;
+    font-size:13px;
+    padding:7px 10px;
+    position: relative;
+    top:30px;
+    right:10px;
+    border: 2px solid transparent;
+}
+
+/* container7 */
+.container7{
+    margin-top:0px;
+}
+
+.container7 ul li{
+    margin:20px 5px;
+    font-size: 13px;
+    /* color: red; */
+    /* font-weight: 600; */
+}
+
+/* container8 */
+.container8{
+    height:80px;
+}
+
+.container8-left img{
+    position:relative;
+    top: 25px;
+    left:40px;
+    height:28px;
+}
+
+.container8-right .font-icon {
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin:0 40px; */
+}
+.container8-right .font-icon .fa-brands{
+    margin: 1px 5px;
+    font-size: 16px;
+}
+}
 
 
 /* mobile responsive */
-@media (max-width:480px){
-html{
+@media(max-width:480px){
+
+ html{
     overflow-x: hidden;
 }
  body{
@@ -679,9 +985,7 @@ font-size:14px;
 
 /* container8 */
 .container8{
-    /* background-color:rgb(43, 40, 40); */
     height:70px;
-    /* color: white; */
 }
 
 .container8-left img{
@@ -691,8 +995,6 @@ font-size:14px;
     height: 22px;
 }
 
-
- 
 .container8-right .font-icon .fa-brands{
     margin: 6px 5px;
     font-size: 12px;
