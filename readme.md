@@ -6,6 +6,7 @@
 - CSS Positioning
 - Pseudo Selectors
 - Selectors
+- Media Query
 
 ## Time taken to Complete.
 - The Project took almost 1 day to complete.
