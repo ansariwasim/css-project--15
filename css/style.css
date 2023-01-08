@@ -670,7 +670,7 @@ background-color: rgb(87, 83, 83);
     .abcd{
         display: flex;
         justify-content: space-between;
-        border: 2px solid red;
+        /* border: 2px solid red; */
         width:90vw;
         margin: auto;
         font-family: 'Roboto', sans-serif;
